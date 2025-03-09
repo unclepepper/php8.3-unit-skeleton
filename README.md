@@ -7,4 +7,4 @@
 
 
 ### To install the project, run the command:
-    ``` make init ```
+``` make init ```
