@@ -20,7 +20,6 @@ down:
 generate-env:
 	@if [ ! -f .env.local ]; then \
 		cp .env .env.local && \
-		sed -i "s/^DB_PASSWORD=/DB_PASSWORD=$(shell openssl rand -hex 8)/" .env.local; \
 		sed -i "s/^POSTGRES_PASSWORD=/POSTGRES_PASSWORD=$(shell openssl rand -hex 8)/" .env.local; \
 	fi
 
